@@ -1,0 +1,28 @@
+{
+  "name": "tick-tack-toe",
+  "version": "0.1.0",
+  "private": false,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.30",
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
+    "@fortawesome/react-fontawesome": "^0.1.11",
+    "create-react-app": "^1.4.3",
+    "eslint": "^5.4.0",
+    "event-stream": "3.3.4",
+    "install": "^0.13.0",
+    "npm": "^6.14.8",
+    "prop-types": "^15.6.0",
+    "react": "next",
+    "react-data-table-component": "^6.11.2",
+    "react-dom": "next",
+    "react-scripts": "1.0.17",
+    "save": "^2.3.1",
+    "styled-components": "^5.1.1"
+  },
+  "scripts": {
+    "prestart": "npm install",
+    "start": "HOST=0.0.0.0 PORT=8000 ./node_modules/.bin/react-scripts start",
+    "pretest": "npm install",
+    "test": "rm -rf ./unit.xml; CI=true TEST_REPORT_FILENAME=./unit.xml ./node_modules/.bin/react-scripts test --verbose --env=jsdom --testResultsProcessor ./node_modules/jest-junit-reporter"
+  }
+}
